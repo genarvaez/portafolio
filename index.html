@@ -6,9 +6,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="main.js"></script>
 </head>
   <body class="welcome">
     <span id="splash-overlay" class="splash"></span>
@@ -16,17 +19,11 @@
     <header class="navbar-fixed">
       <nav class="row cyan lighten-2">
         <div class="col s12">
-          <ul class="left nombre">
-            <a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
-          </ul>
-          <ul class="right">
-            <li class="right">
-              <a href="#" target="_blank" class="fa fa-linkedin-square fa-2x waves-effect waves-light"><span class="icon-text"></span></a>
-            </li class="right">GÉNESIS NARVAÉZ</li>
-            <li class="right">
-              <a href="" target="_blank" class="fa fa-github-square fa-2x waves-effect waves-light"><span class="icon-text"></span></a>
-            </li>
-          </ul>
+          <div class="center barra">
+            <span class="about-nav">ABOUT ME</span>
+            <span class="skills-nav">SKILLS</span>
+            <span class="project-nav">PROJECTS</span>
+            <span class="contact-nav">CONTACT ME</span>
         </div>
       </nav>
     </header>
@@ -65,25 +62,25 @@
             <p>S</p>
           </div>
           <div class="row center content skills-content">
-            <div class="col s3 m3 l3 animated a1">
+            <div class="col a s3 m3 l3 animated a1">
                 <img src="img/javascript_logo.png" class="responsive-img" alt="">
             </div>
-            <div class="col s3 m3 l3 animated a2">
+            <div class="col a s3 m3 l3 animated a2">
                 <img src="img/HTML5_Logo.png" class="responsive-img" alt="">
             </div>
-            <div class="col s3 m3 l3 animated a3">
+            <div class="col a s3 m3 l3 animated a3">
                 <img src="img/css3.ico" class="responsive-img" alt="">
             </div>
-            <div class="col s4 m3 l3 animated a4">
+            <div class="col a s4 m3 l3 animated a4">
                 <img src="img/github.png" class="responsive-img" alt="">
             </div>
-            <div class="col s4 m4 l4 animated a5">
+            <div class="col a s4 m4 l4 animated a5">
                 <img src="img/sass.ico" class="responsive-img" alt="">
             </div>
-            <div class="col s4 m4 l4 animated a6">
+            <div class="col a s4 m4 l4 animated a6">
                 <img src="img/materialize.png" class="responsive-img" alt="">
             </div>
-            <div class="col s4 m4 l4 animated a7">
+            <div class="col a s4 m4 l4 animated a7">
                 <img src="img/Bootstrap.png" class="responsive-img" alt="">
             </div>
           </div>
@@ -99,32 +96,23 @@
             <p>T</p>
             <p>S</p>
           </div>
-          <div class="row">
-            <div class="col s3 m3 l12 content project-content">
-              <div class="carousel carousel-slider center" data-indicators="true">
-                  <div class="carousel-fixed-item center">
-                    <a class="btn waves-effect white grey-text darken-text-2">button</a>
-                  </div>
-                  <div class="carousel-item red white-text" href="#one!">
-                    <h2>First Panel</h2>
-                    <p class="white-text">This is your first panel</p>
-                  </div>
-                  <div class="carousel-item amber white-text" href="#two!">
-                    <h2>Second Panel</h2>
-                    <p class="white-text">This is your second panel</p>
-                  </div>
-                  <div class="carousel-item green white-text" href="#three!">
-                    <h2>Third Panel</h2>
-                    <p class="white-text">This is your third panel</p>
-                  </div>
-                  <div class="carousel-item blue white-text" href="#four!">
-                    <h2>Fourth Panel</h2>
-                    <p class="white-text">This is your fourth panel</p>
-                  </div>
-                </div>
+          <div class="row center contenido-proyecto">
+            <div class="col s1 m1 l1 project-content content leftImg animated">
+              <img src="img/bciCaptura.jpg" class="responsive-img img-proyectos noOpacity especial" alt="">
+              <img src="img/translab.png" class="responsive-img img-proyectos especial" alt="">
+              <img src="img/LyftCaptura.png" class="responsive-img img-proyectos especial" alt="">
+              <img src="img/pinterest.png" class="responsive-img img-proyectos especial" alt="">
+            </div>
+            <div class="col s6 m6 l6 project-content content especial animated">
+              <img src="img/bciCaptura.jpg" class="responsive-img" id="especial" alt="">
+            </div>
+            <div class="col s3 m3 l3 content project-content nombreProyecto animated">
+                <span>NOMBRE: </span><p class="nombre">BCI CREDIHOGAR</p>
+                <span>VISTA: </span><p class="vista">MOBILE</p>
+                <span>DESCRIPCIÓN: <p class="descripcion">Applicacion para dispositivos móviles que permite autogestionar el proceso de adquisición de cŕeditos hipotecarios</p></span>
+                <a href="https://genarvaez.github.io/MiCreditoBCI/" class="demo"><button class="btn btn-proyectos">DEMO</button></a><a href="https://github.com/genarvaez/MiCreditoBCI" class="code"><button class="btn btn-proyectos">CODE</button></a>
             </div>
           </div>
-          
         </div>
         <div class="col s3 m3 l3 cuatro">
           <div class="text-entry animated">
@@ -143,8 +131,8 @@
       </div>
     </section>   
   </body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-	<script src="main.js"></script>
+	
 </body>
 </html>
