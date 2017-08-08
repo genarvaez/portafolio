@@ -186,6 +186,7 @@ body.welcome {
   background: #A10EFF;
   -webkit-transition: width 1s; /* Safari */
   transition: width 1s;
+  display: flex;
 }
 .text-entry{
   font-size: 1.5em;
@@ -202,18 +203,15 @@ body.welcome {
 }
 
 h1{
-  font-size: 15em;
+  font-size: 9em;
   padding: 5px;
-  margin-left: 20px;
 }
 .yo{
   text-align: justify;
   padding: 20px;
   font-size: 1.1em;
 }
-.imagen{
-  width: 60%;
-}
+
 .carousel{
   z-index: -200;
 }
@@ -297,7 +295,7 @@ h1{
 }
 .barra{
   display: flex;
-  margin: 0 20%;
+  justify-content: space-around;
 }
 .barra span{
   margin: 0 30px;
@@ -323,4 +321,8 @@ h1{
 .nombreProyecto span{
   font-size: 1.4em;
   font-family: 'Rubik', sans-serif;
+}
+p span{
+  color: #4dd0e1;
+  font-size: 3em;
 }
