@@ -1,143 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Welcome</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="main.js"></script>
-</head>
-  <body class="welcome">
-    <span id="splash-overlay" class="splash"></span>
-    <span id="welcome" class="z-depth-4"></span>
-    <header class="navbar-fixed">
-      <nav class="row cyan lighten-2">
-        <div class="col s12">
-          <div class="center barra">
-            <span class="about-nav">ABOUT ME</span>
-            <span class="skills-nav">SKILLS</span>
-            <span class="project-nav">PROJECTS</span>
-            <span class="contact-nav">CONTACT ME</span>
-        </div>
-      </nav>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Grayrids">
+    
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/line-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/menu_sideslide.css">
+    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/responsive.css">
+
+  </head>
+  <body>
+      <div class="menu-wrap">
+        <nav class="menu navbar">
+          <div class="icon-list navbar-collapse">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#video-area">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Skills & Technical tools</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolios">My Projects</a>
+              </li>            
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#rewards">Rewards</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-box">Contact me</a>
+              </li>
+            </ul>
+          </div>
+        </nav> 
+        <button class="close-button" id="close-button"><i class="lnr lnr-cross"></i></button>
+      </div>      
+  	<!-- Header Section Start -->
+
+    <header id="video-area" data-stellar-background-ratio="0.5">    
+      <div id="block" data-vide-bg="video/video"></div>
+      <div class="fixed-top">
+          <div class="container">
+            <div class="logo-menu">
+              <button class="menu-button" id="open-button"><i class="lnr lnr-menu"></i></button>    
+            </div>           
+          </div>
+      </div>
+      <div class="overlay overlay-2"></div>      
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-10">
+            <div class="contents text-center">
+              <h1 class="wow fadeInDown me" data-wow-duration="1000ms" data-wow-delay="0.3s">Génesis Narváez,</h1>
+              <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">HI THERE!</h1>
+              <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">I'm a junior Developer with grates expectatives, to many enthusiasm, breacker of chains and mother of poodle dog.
+              <p class="lead  wow fadeIn">I'm focus on learn everything about code, differents program lenguage and skill that give to me a integral view  in the process to create new tools for everyone </p>
+            </div>
+          </div>
+        </div> 
+      </div>      
     </header>
-    <section>
-      <div class="row">
-        <div class="col s3 m3 l3 uno" >
-          <div class="text-entry animated">
-            <p>A</p>
-            <p>B</p>
-            <p>O</p>
-            <p>U</p>
-            <p>T</p>
-            <br>
-            <p>M</p>
-            <p>E</p>
-          </div>
-          <div class="row center content about-content" id="contenido">
-            <div class="col s6 m6 l6">
-              <img src="img/foto.jpg" class="circle responsive-img imagen yo" alt="">
-            </div>
-            <div class="col s6 m6 l6 yo">
-              <h1 id="dynamic-text">HI!</h1>
-              <p><span>I</span>'m a junior Developer with grates expectatives, to many enthusiasm, breacker of chains and mother of poodle dog.
-              <p><span>I</span>'m focus on learn everything about code, differents program lenguage and skill that give to me a integral view  in the process to create new tools for everyone</p>
-            </div>
-            
-          </div>
+    <!-- Header Section End --> 
+
+
+    <!-- Services Section Start -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Skills <span>& Tools</span></h2>
+          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Soft and technical skills, tools and  <br> working environment.</p>
         </div>
-        <div class="col s3 m3 l3 dos">
-          <div class="text-entry animated">
-            <p>S</p>
-            <p>K</p>
-            <p>I</p>
-            <p>L</p>
-            <p>L</p>
-            <p>S</p>
-          </div>
-          <div class="row center content skills-content">
-            <div class="col a s3 m3 l3 animated a1">
-                <img src="img/javascript_logo.png" class="responsive-img" alt="">
-            </div>
-            <div class="col a s3 m3 l3 animated a2">
-                <img src="img/HTML5_Logo.png" class="responsive-img" alt="">
-            </div>
-            <div class="col a s3 m3 l3 animated a3">
-                <img src="img/css3.ico" class="responsive-img" alt="">
-            </div>
-            <div class="col a s4 m3 l3 animated a4">
-                <img src="img/github.png" class="responsive-img" alt="">
-            </div>
-            <div class="col a s4 m4 l4 animated a5">
-                <img src="img/sass.ico" class="responsive-img" alt="">
-            </div>
-            <div class="col a s4 m4 l4 animated a6">
-                <img src="img/materialize.png" class="responsive-img" alt="">
-            </div>
-            <div class="col a s4 m4 l4 animated a7">
-                <img src="img/Bootstrap.png" class="responsive-img" alt="">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
+              <div class="icon">
+                <i class="">JS</i>
+              </div>
+              <h4>Javascript</h4>
+              <p>Is a high-level, dynamic, weakly typed, object-based, multi-paradigm, and interpreted programming language.</p>
             </div>
           </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="0.4s">
+              <div class="icon">
+                <i class="fa fa-html5" aria-hidden="true"></i>
+              </div>
+              <h4>HTML5</h4>
+              <p>is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current major version of the HTML standard.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="0.6s">
+              <div class="icon">
+                <i class="">CCS</i>
+              </div>
+              <h4>CCS3</h4>
+              <p>A style sheet language used for describing the presentation of a document written in a markup language.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="0.8s">
+              <div class="icon">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </div>
+              <h4>GitHub/GitBucket</h4>
+              <p>Web based Git or version control repository and Internet hosting service. It is mostly used for code</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="1s">
+              <div class="icon">
+                <i class="">SASS</i>
+              </div>
+              <h4>Sass</h4>
+              <p>A style sheet language. Sass is a scripting language that is interpreted or compiled into Cascading Style Sheets (CSS).</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="1.2s">
+              <div class="icon">
+                <i class="">Bootstrap</i>
+              </div>
+              <h4>Bootstrap</h4>
+              <p>Is a free and open-source front-end web framework for designing websites and web applications.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="1.2s">
+              <div class="icon">
+                <i class="">Materialize</i>
+              </div>
+              <h4>Materilize</h4>
+              <p>A modern responsive front-end framework based on Material Design.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="1.2s">
+              <div class="icon">
+                <i>Jquery</i>
+              </div>
+              <h4>Jquery</h4>
+              <p>Is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="1.2s">
+              <div class="icon">
+                <i class="">Gulp</i>
+              </div>
+              <h4>Gulp</h4>
+              <p>It is a task runner used for automation of time-consuming and repetitive tasks involved in web development.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="1.2s">
+              <div class="icon">
+                <i class="fa fa-window-restore" aria-hidden="true"></i>
+              </div>
+              <h4>Responsive Design</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="1.2s">
+              <div class="icon">
+                <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+              </div>
+              <h4>Fast Learn</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="item-boxes wow fadeInDown" data-wow-delay="1.2s">
+              <div class="icon">
+                <i class="fa fa-users" aria-hidden="true"></i>
+              </div>
+              <h4>Agile Skills</h4>
+            </div>
+          </div>
+
         </div>
-        <div class="col s3 m3 l3 tres">
-          <div class="text-entry animated">
-            <p>P</p>
-            <p>R</p>
-            <p>O</p>
-            <p>J</p>
-            <p>E</p>
-            <p>C</p>
-            <p>T</p>
-            <p>S</p>
-          </div>
-          <div class="row center contenido-proyecto">
-            <div class="col s1 m1 l1 project-content content leftImg animated">
-              <img src="img/bciCaptura.jpg" class="responsive-img img-proyectos noOpacity especial" alt="">
-              <img src="img/translab.png" class="responsive-img img-proyectos especial" alt="">
-              <img src="img/LyftCaptura.png" class="responsive-img img-proyectos especial" alt="">
-              <img src="img/pinterest.png" class="responsive-img img-proyectos especial" alt="">
-            </div>
-            <div class="col s6 m6 l6 project-content content especial animated">
-              <img src="img/bciCaptura.jpg" class="responsive-img" id="especial" alt="">
-            </div>
-            <div class="col s3 m3 l3 content project-content nombreProyecto animated">
-                <span>NAME: </span><p class="nombre">BCI CREDIHOGAR</p>
-                <span>DEVICE: </span><p class="vista">MOBILE</p>
-                <span>DESCRIPTION: <p class="descripcion">Applicacion para dispositivos móviles que permite autogestionar el proceso de adquisición de cŕeditos hipotecarios</p></span>
-                <a href="https://genarvaez.github.io/MiCreditoBCI/" class="demo"><button class="btn btn-proyectos">DEMO</button></a><a href="https://github.com/genarvaez/MiCreditoBCI" class="code"><button class="btn btn-proyectos">CODE</button></a>
-            </div>
-          </div>
-        </div>
-        <div class="col s3 m3 l3 cuatro">
-          <div class="text-entry animated">
-            <p>C</p>
-            <p>O</p>
-            <p>N</p>
-            <p>T</p>
-            <p>A</p>
-            <p>C</p>
-            <p>T</p>
-            <br>
-            <p>M</p>
-            <p>E</p>
-          </div>
-        </div>
-        <div class="row center contact-content">
-          <div class="col s12 m12 l12">
-            <h1>alksjdlasd</h1>
+      </div>
+    </section>
+    <!-- Services Section End -->
+    <!-- Start Video promo Section -->
+    <section class="video-promo section" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+              <div class="video-promo-content text-center">
+                <h2 class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Available to hire!</h2>
+              </div>
           </div>
         </div>
       </div>
-    </section>   
+    </section>
+    <!-- End Video Promo Section -->
+    
+
+    <!-- Portfolio Section -->
+    <section id="portfolios" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">My <span>Projects</span></h2>
+          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+          <p class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Projects made in the process to learn front-end skills.</p>
+        </div>
+        <div class="row">          
+          <div class="col-md-12">
+            <!-- Portfolio Controller/Buttons -->
+            <div class="controls text-center wow fadeInUp" data-wow-delay=".6s">
+              <a class="control mixitup-control-active btn btn-common" data-filter="all">
+                All 
+              </a>
+              <a class="control btn btn-common" data-filter=".mobile">
+                Mobile 
+              </a>
+              <a class="control btn btn-common" data-filter=".desktop">
+                Desktop
+              </a>
+            </div>
+            <!-- Portfolio Controller/Buttons Ends-->          
+
+            <!-- Portfolio Recent Projects -->
+            <div id="portfolio" class="row wow fadeInUp" data-wow-delay="0.8s">
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix mobile planning">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/translab.png">
+                      <img src="img/portfolio/translab.png" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"></i>
+                    </a>
+                    <a href=""><button class="btn demo">DEMO</button></a> 
+                    <a href=""><button class="btn code">CODE</button></a>
+                  </div>               
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix mobile">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/bciCaptura.jpg">
+                      <img src="img/portfolio/bciCaptura.jpg" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"></i>
+                    </a>
+                    <a href="https://genarvaez.github.io/MiCreditoBCI/"><button class="btn demo">DEMO</button></a> 
+                    <a href="https://github.com/genarvaez/MiCreditoBCI"><button class="btn code">CODE</button></a>
+                  </div>               
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix mobile">
+                <div class="portfolio-item">
+                  <div class="shot-item">
+                    <a class="overlay lightbox" href="img/portfolio/LyftCaptura.png">
+                      <img src="img/portfolio/LyftCaptura.png" alt="" /> 
+                      <i class="lnr lnr-plus-circle item-icon"></i>
+                    </a>
+                    <a href="https://genarvaez.github.io/lyft-app/"><button class="btn demo">DEMO</button></a> 
+                    <a href="https://github.com/genarvaez/lyft-app"><button class="btn code">CODE</button></a>
+                  </div>               
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix desktop research">
+                <div class="portfolio-item">
+                  <div class="shot-item imagen">
+                    <a class="overlay lightbox" href="img/portfolio/labCar.png">
+                      <img src="img/portfolio/labCar.png" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"></i>
+                    </a>
+                    <a href="https://genarvaez.github.io/lab-car/"><button class="btn demo">DEMO</button></a> 
+                    <a href="https://github.com/genarvaez/lab-car"><button class="btn code">CODE</button></a>
+                  </div>               
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix desktop planning">
+                <div class="portfolio-item">
+                  <div class="shot-item imagen">
+                    <a class="overlay lightbox" href="img/portfolio/toDo.png">
+                      <img src="img/portfolio/toDo.png" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"></i>
+                    </a>
+                    <a href="https://genarvaez.github.io/todo-jquery/"><button class="btn demo">DEMO</button></a> 
+                    <a href="https://github.com/genarvaez/todo-jquery"><button class="btn code">CODE</button></a>
+                  </div>               
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix desktop research">
+                <div class="portfolio-item">
+                  <div class="shot-item imagen">
+                    <a class="overlay lightbox" href="img/portfolio/photolab.png">
+                      <img src="img/portfolio/photolab.png" alt="" />  
+                      <i class="lnr lnr-plus-circle item-icon"></i>
+                    </a>
+                    <a href="https://genarvaez.github.io/photolab/"><button class="btn demo">DEMO</button></a> 
+                    <a href="https://github.com/genarvaez/photolab"><button class="btn code">CODE</button></a>
+                  </div>               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Container Ends -->
+
+    </section>
+    <!-- Portfolio Section Ends --> 
+    <!-- Counter Section Start -->
+    <div class="counters section" id="rewards" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row"> 
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="wow fadeInUp" data-wow-delay=".2s">
+              <div class="facts-item"> 
+                <div class="icon">
+                  <img src="img/portfolio/5mejores.png" alt="">
+                </div>                
+                <div class="fact-count">
+                  <h3><span class="counter">3</span>x</h3>
+                  <h4>Cuadro de Honor</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="wow fadeInUp" data-wow-delay=".4s">
+              <div class="facts-item">
+                <div class="icon">
+                  <img src="img/portfolio/Laboratoria_Isotipo WebShop.png" class="responsive-img" alt="">
+                </div>                
+                <div class="fact-count">
+                  <h3><span class="counter">4</span>th</h3>
+                  <h4>Laboratoria's Generation</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="wow fadeInUp" data-wow-delay=".6s">
+              <div class="facts-item">
+                <div class="icon">
+                  <img src="img/portfolio/mejor-squad.png" alt="">
+                </div>                
+                <div class="fact-count">
+                  <h3><span class="counter">3</span>th</h3>
+                  <h4>3th Sprint</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="download" class="section">
+        <div class="container">
+          <div class="section-header">          
+            <h2 class="section-title wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s"><span>Download</span> My Cv</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-12">            
+              <div class="download-area text-center wow fadeInUp" data-wow-delay="0.3s">
+                  <a href="php/CV (1) (1).doc" download class="btn btn-border"><i class="fa fa-apple"></i>Download Here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Counter Section End -->
+
+    <!-- testimonial Section Start -->
+    <div id="testimonial" class="section">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-10 wow fadeInRight" data-wow-delay="0.2s">
+            <div class="touch-slider owl-carousel owl-theme">
+              <div class="testimonial-item">
+                <img src="img/testimonial/customer1.png" alt="Client Testimonoal" />
+                <div class="testimonial-text">
+                  <p>Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br>In hac habitasse platea dictumst. Vivamus in accumsan ex</p>
+                  <h3>Johnathan Doe</h3>
+                  <span>Marketing Head Matrix media</span>
+                </div>
+              </div>
+              <div class="testimonial-item">
+                <img src="img/testimonial/customer2.png" alt="Client Testimonoal" />
+                <div class="testimonial-text">
+                  <p>Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br>In hac habitasse platea dictumst. Vivamus in accumsan ex</p>
+                  <h3>Oidila Matik</h3>
+                  <span>President Lexo Inc</span>
+                </div>
+              </div>
+              <div class="testimonial-item">
+                <img src="img/testimonial/customer3.png" alt="Client Testimonoal" />
+                <div class="testimonial-text">
+                  <p>Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br>In hac habitasse platea dictumst. Vivamus in accumsan ex</p>
+                  <h3>- Alex Dattilo</h3>
+                  <span>CEO Optima Inc</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+    <!-- Footer Section Start -->
+    <footer id="contact-box">          
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="social-icons wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">
+              <ul>
+                <li class="facebook"><a href="https://github.com/genarvaez"><i class="fa fa-github"></i></a></li>
+                <li class="google-plus"><a href="https://www.linkedin.com/in/g%C3%A9nesis-narv%C3%A1ez-732509140/"><i class="fa fa-linkedin"></i></a></li>
+                <li class="linkedin"><a href="#" data-toggle="collapse" data-target="#demo" ><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <div id="demo" class="collapse center">
+              <p>E-MAIL: GE_NARVAEZ@HOTMAIL.COM</p>
+            </div>
+            <div class="site-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s">
+              <p>2017 - Designed & Developed by <a rel="nofollow" href="https://uideck.com">Génesis Narváez</a></p>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End --> 
+
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="lnr lnr-arrow-up"></i>
+    </a>
+
+    <div id="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>    
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery-min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/nivo-lightbox.js"></script>
+    <script src="js/owl.carousel.min.js"></script>    
+    <script src="js/jquery.stellar.min.js"></script>    
+    <script src="js/jquery.nav.js"></script>    
+    <script src="js/smooth-scroll.js"></script>    
+    <script src="js/smooth-on-scroll.js"></script>    
+    <script src="js/wow.js"></script>    
+    <script src="js/menu.js"></script>
+    <script src="js/jquery.vide.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>    
+    <script src="js/jquery.magnific-popup.min.js"></script>    
+    <script src="js/waypoints.min.js"></script>    
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>     
+    <script src="js/main.js"></script>
+    
   </body>
-	
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-	
-</body>
 </html>
