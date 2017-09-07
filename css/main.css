@@ -162,8 +162,8 @@ a:not([href]):not([tabindex]):hover {
   color: #fff;
 }
 .menu-bg {
-  background-color: #fff!important;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  background-color: transparent;
+  box-shadow: none;
   z-index: 999;
   padding: 3px;
 }
